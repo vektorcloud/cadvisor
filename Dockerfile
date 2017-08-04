@@ -5,7 +5,7 @@ ENV CADVISOR_URL https://github.com/google/cadvisor/releases/download/v${CADVISO
 
 RUN apk add --no-cache zfs device-mapper thin-provisioning-tools && \
     wget $CADVISOR_URL -O /usr/bin/cadvisor && \
-    chmod +x /usr/bin/cadvisor 
+    chmod +x /usr/bin/cadvisor
 
 EXPOSE 8080/tcp
 ENTRYPOINT ["/usr/bin/cadvisor" "-logtostderr"]
