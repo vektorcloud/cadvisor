@@ -8,4 +8,4 @@ RUN apk add --no-cache zfs device-mapper thin-provisioning-tools && \
     chmod +x /usr/bin/cadvisor
 
 EXPOSE 8080/tcp
-ENTRYPOINT ["/usr/bin/cadvisor" "-logtostderr"]
+ENTRYPOINT ["/usr/bin/cadvisor", "-logtostderr"]
