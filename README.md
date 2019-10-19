@@ -1,6 +1,6 @@
 # cadvisor
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/cadvisor)
 
 Alpine-based cadvisor image
 
